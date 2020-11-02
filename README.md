@@ -17,12 +17,12 @@ The task is to develop a simple method for classifying eukaryotic protein sequen
 
 In the report, we implement various deep leanring models:
 
-* Long Short-Term Memory (LSTM): LSTM is a powerful and widly-used deep learning architecture for sequence modelling. As for the protein sequence, we also utilised the embedding layer to convert the amino acid labels into numeric representation and a Multi-layer Perceptron (MLP) decoder layer to generate the probability of each category. In the experiment we found that normal LSTM where we use the hidden state at the final time step to generate probability fails to give good results, therefore we try making use of all hidden states by adding a max pooling layer which takes all hidden states into input and outputs a single hidden representation for prediction. The schemetic model plot is shown below:
+* Long Short-Term Memory (LSTM): LSTM is a powerful and widly-used deep learning architecture for sequence modelling. As for the protein sequence, we also utilised the embedding layer to convert the amino acid labels into numeric representation and a Multi-layer Perceptron (MLP) decoder layer to generate the probability of each category. In the experiment we found that normal LSTM where we use the hidden state at the final time step to generate probability fails to give good results, therefore we try making use of all hidden states by adding a max pooling layer which takes all hidden states into input and outputs a single hidden representation for prediction. The schematic model plot is shown below:
 
 
 <img src="https://github.com/YanSong97/subcellular-location-prediction/blob/master/LSTM%20with%20pooling%20.png" width="500" height="350" />
 
-* LSTM with attention: inspired by many of NLP papers, we also implement an attention network. Different from a LSTM with max pooling layer, attention network takes a weighted average of all hidden states which is analogous to a average pooling layer. The schemetic model plot is shown as:
+* LSTM with attention: inspired by many of NLP papers, we also implement an attention network. Different from a LSTM with max pooling layer, attention network takes a weighted average of all hidden states which is analogous to a average pooling layer. The schematic model plot is shown as:
 
 
 <img src="https://github.com/YanSong97/subcellular-location-prediction/blob/master/LSTM-attention.png" width="250" height="350" />
