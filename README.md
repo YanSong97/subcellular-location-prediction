@@ -1,6 +1,8 @@
 # subcellular-location-prediction
 This is a mini-project of UCL course COMP0082 Bioinformatics.
 
+## report link: [LINK](https://github.com/YanSong97/subcellular-location-prediction/blob/master/report.pdf) , code link: [LINK](https://github.com/YanSong97/subcellular-location-prediction/blob/master/subcellular_location_prediction.ipynb)
+
 ## coursework description: [LINK](http://www0.cs.ucl.ac.uk/staff/D.Jones/coursework/)
 The task is to develop a simple method for classifying eukaryotic protein sequences in the given dataset into the 4 categories:
 * Cytosolic - i.e. within the cell itself, but not inside any organelles
